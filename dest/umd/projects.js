@@ -9,6 +9,7 @@
 })(function (require, exports) {
     "use strict";
     exports.__esModule = true;
+    exports.Project = exports.Team = exports.Person = void 0;
     var teams_1 = require("./teams");
     exports.Person = teams_1.Person;
     exports.Team = teams_1.Team;

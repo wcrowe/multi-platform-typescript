@@ -9,6 +9,7 @@
 })(function (require, exports) {
     "use strict";
     exports.__esModule = true;
+    exports.Team = exports.Person = void 0;
     var Person = (function () {
         function Person() {
         }
