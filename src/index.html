@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+  <script src="js/QSA.js"></script>
+  <script>
+      QSA.noConflict();
+  </script>
+</head>
+
+<body>
+
+<div>
+  <di>
+    <img src="./img/rusty.jpg">
+  </di>
+<form id="login" name="login" method="post">
+  <label for="username" id="username_lbl" value="User Name">User Name</label>
+  <input class="username" id="username" name="username" value="">
+  <button type="submit" id="submit_btn" name="submit_btn">Submit</button>
+  <div>
+    <script src="js/MyLib.js"></script>
+    <script src="js/myLibrary.js"></script>
+    <script src="js/index.umd.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/teams.js"></script>
+    <script>
+      const name = new MyLib("Mcn", "solution", " at India");
+      const mylib = myGloblalLib.getSettings();
+      console.log(mylib);
+    </script>
+  </div>
+</form>
+
+</div>
+<!-- Add your site or application content here -->
+<p>Hello world! This is HTML5 Boilerplate.</p>
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+
+<script>
+  console.log(QSA("#username"));
+  let elementByidid = document.getElementById("username");
+  console.log(elementByidid);
+  let elementByclass = document.getElementsByClassName('username');
+  console.log(elementByclass);
+  let elementByname = document.getElementsByName('username');
+  console.log(elementByname);
+  let elements = document.getElementsByTagName("input");
+  console.log(elements);
+  var project = new company.organization.Project("test", "test description");
+  project.assignTo(
+    new company.organization.Team("TypeScript team",
+      new company.organization.Person("Francesco", "Abbruzzese", "team leader")));
+  let comp = company.organization.Project("test","test me");
+  console.log(comp);
+</script>
+
+</body>
+
+</html>
